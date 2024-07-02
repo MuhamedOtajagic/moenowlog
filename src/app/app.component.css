@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 30px;
+    height: 60px;
     background: #282b30 ;
     z-index: 1;
     width: 100%;
 }
 
 #banner__text{
-    font-size: 1rem;
+    font-size: 2rem;
     font-style: italic;
     font-stretch: extra-expanded;
     letter-spacing: 0.1rem;
@@ -119,4 +119,5 @@
     font-size: 1rem;
     line-height: 26px;
     padding-bottom: 2rem;
+    color: #D2D2D6;
 }
