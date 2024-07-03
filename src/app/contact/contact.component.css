@@ -8,6 +8,10 @@
     place-items: center;
 }
 
+.contact__wrapper .is-phone-portrait{
+    flex-direction: column;
+}
+
 .contact__wrapper{
     width: 80%;
 }

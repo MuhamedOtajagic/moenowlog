@@ -2,9 +2,9 @@
 <div class="bannerwrapper">
   <h1 id="banner__text">A Place Where Excellence & Greatness Will Be Achieved</h1>
 </div>
-<div class="hero">
-  <div class="hero__wrapper">
-    <div class="selfie">
+<div class="hero" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
+  <div class="hero__wrapper" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
+    <div class="selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
       <img src="https://moenow.netlify.app/fillerimage.jpg" alt="Image of Muhamed Otajagic">
     <div class="planned">
       <h1 class="content__header">Planned Projects</h1>
@@ -13,7 +13,7 @@
         <br><br>
         I’ll be exploring Python projects where I’ll explore versatile libraries such as NumPy, Pandas, and Matplotlib, allowing me to deepen my knowledge of manipulating data, data analysis, and data visualization. This experience will not only improve my programming skills but also prepare me for tackling more complex challenges in the future. Machine learning and artificial intelligence are areas in computer science that I am very passionate about. I believe AI will be the future; it has already become a global sensation, with news feeds constantly covering new discoveries. I’d like to eventually start combining the power of AI with current threat detection models to develop technology that is capable of detecting and stopping malware in its tracks.
         <br><br>
-        I’ve started looking into the world of 3D printers and plan on purchasing one where I’ll be able to combine my knowledge of mechanical design and programming. Being inspired by <a href="https://www.youtube.com/@jamesbruton">James Bruton's</a> OpenDog project, I plan on attempting to make my own robot dog with greater artificial intelligence capabilities, similar to Boston Dynamics’ Spot robot. It might be a huge project, but I see myself learning invaluable knowledge from it. Additionally, I plan on working on a robot arm, diving deeper into the world of robotics. 
+        I’ve started looking into the world of 3D printers and plan on purchasing one where I’ll be able to combine my knowledge of mechanical design and programming. Being inspired by <a href="https://www.youtube.com/@jamesbruton" target="_blank">James Bruton's</a> OpenDog project, I plan on attempting to make my own robot dog with greater artificial intelligence capabilities, similar to Boston Dynamics’ Spot robot. It might be a huge project, but I see myself learning invaluable knowledge from it. Additionally, I plan on working on a robot arm, diving deeper into the world of robotics. 
         <br><br>
         With the experience I’ll get from the robot dog, I plan on researching how to take to the skies with drones. I plan on making this project open source, so others will be able to collaborate and have the capability of easily making their own designs. I want to figure out a way to put artificial intelligence on a drone to act like a guidance system that, with checkpoints similar to those in competitive drone racing, will be able to fly an entire track by itself.
     </p>
