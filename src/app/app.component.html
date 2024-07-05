@@ -7,17 +7,19 @@
 </div>
 <div class="tablet__portrait__display" *ngIf="isTabletPortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
     <div class="mobile__selfie" id="mobile__selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait,'is-tablet-portrait': isTabletPortrait}">
-      <img src="moenow__mobile__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
+      <img src="moenow__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
     </div>
+</div>
+<div class="mobile__portrait__display" *ngIf="isPhonePortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+  <div class="mobile__selfie" id="mobile__selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait,'is-tablet-portrait': isTabletPortrait}">
+    <img src="moenow__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
+  </div>
 </div>
 <div class="hero" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
   <div class="hero__wrapper" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
-    <div class="selfie" id="selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+    <div class="selfie" id="selfie" *ngIf="!isPhonePortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
       <img src="moenow__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
-    <!-- <div class="mobile__selfie" id="mobile__selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait,'is-tablet-portrait': isTabletPortrait}">
-      <img src="moenow__mobile__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
-    </div> -->
-    <div class="planned" *ngIf="!isPhonePortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+    <div class="planned" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
       <h1 class="content__header">Planned Projects</h1>
       <p class="content__text">
         Currently, my goal for this website are to have it updated to a more fully fledged place where I can regularly share my projects and my experiences while also providing resources. 
@@ -65,6 +67,9 @@
     </div>
   </div>
 </div>
+
+
+
 <app-contact></app-contact>
 
 <router-outlet></router-outlet>

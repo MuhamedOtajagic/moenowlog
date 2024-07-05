@@ -70,6 +70,32 @@
     }
 }
 
+.tablet__portrait__display{
+    place-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tablet__portrait__display .mobile__selfie img{
+    width: 80%;
+    height: 53vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.mobile__portrait__display{
+    place-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mobile__portrait__display .mobile__selfie img{
+    width: 80%;
+    height: 53vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .hero{
     display: grid;
     place-items: center;
@@ -91,6 +117,16 @@
     grid-gap: 50px 30px;
 }
 
+.is-tablet-portrait .hero__wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.is-phone-portrait .hero__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .is-phone-portrait .hero__wrapper{
     display: flex;
     flex-direction: column;
@@ -102,7 +138,6 @@
     height: 90vh;
     object-fit: cover;
     border-radius: 20px;
-    /* padding-top: 20px; */
 }
 
 .is-tablet-portrait .hero__wrapper .selfie img{
@@ -135,6 +170,10 @@
     color: #D2D2D6;
 }
 
+.is-tablet-portrait .planned .content__text{
+    font-size: 1.3rem;
+}
+
 .planned .content__text a{
     text-decoration: underline;
     color: #D2D2D6;
@@ -146,9 +185,20 @@
     align-items: center;
 }
 
+.is-phone-portrait .hero__wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 .hero__wrapper .aboutMe .content__text{
     font-size: 1rem;
     line-height: 26px;
     padding-bottom: 1rem;
     color: #D2D2D6;
+}
+
+.is-tablet-portrait .hero__wrapper .aboutMe .content__text{
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
 }
