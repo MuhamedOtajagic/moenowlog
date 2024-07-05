@@ -2,11 +2,14 @@
 <div class="bannerwrapper">
   <h1 id="banner__text">A Place Where Excellence & Greatness Will Be Achieved</h1>
 </div>
-<div class="hero" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
-  <div class="hero__wrapper" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
-    <div class="selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape}">
+<div class="note__wrapper" *ngIf="isPhonePortrait || isTabletPortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+  <h2 id="mobile__note">Note: I am still working on mobile responsiveness</h2>
+</div>
+<div class="hero" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+  <div class="hero__wrapper" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+    <div class="selfie" id="selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
       <img src="https://moenow.netlify.app/fillerimage.jpg" alt="Image of Muhamed Otajagic">
-    <div class="planned">
+    <div class="planned" *ngIf="!isPhonePortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
       <h1 class="content__header">Planned Projects</h1>
       <p class="content__text">
         Currently, my goal for this website are to have it updated to a more fully fledged place where I can regularly share my projects and my experiences while also providing resources. 
@@ -23,7 +26,7 @@
       <div class="welcoming">
         <h1 class="content__header">About Me</h1>
         <p class="content__text">
-          Welcome to MoeNow.blog, a blog that I’ve created as a place to showcase my projects. My name is Muhamed Otajagic. I’m a passionate teen who loves technology and has a passion for learning.
+          Welcome to MoeNow, a blog that I’ve created as a place to showcase my projects. My name is Muhamed Otajagic. I’m a passionate teen who loves technology and has a passion for learning.
           <br><br>
           My goal in life is to turn my cybersecurity hobby into a fulfilling career and contribute to making the digital world a safer place for everyone, while also posting information to educate other researchers and cybersecurity practitioners.
         </p>
