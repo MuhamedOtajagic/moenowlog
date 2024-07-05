@@ -5,10 +5,18 @@
 <div class="note__wrapper" *ngIf="isPhonePortrait || isTabletPortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
   <h2 id="mobile__note">Note: I am still working on mobile responsiveness</h2>
 </div>
+<div class="tablet__portrait__display" *ngIf="isTabletPortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
+    <div class="mobile__selfie" id="mobile__selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait,'is-tablet-portrait': isTabletPortrait}">
+      <img src="moenow__mobile__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
+    </div>
+</div>
 <div class="hero" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
   <div class="hero__wrapper" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
     <div class="selfie" id="selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
-      <img src="https://moenow.netlify.app/fillerimage.jpg" alt="Image of Muhamed Otajagic">
+      <img src="moenow__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
+    <!-- <div class="mobile__selfie" id="mobile__selfie" [ngClass]="{'is-phone-portrait': isPhonePortrait,'is-tablet-portrait': isTabletPortrait}">
+      <img src="moenow__mobile__selfie.jpg" alt="Image of Muhamed Otajagic inside a luscious forest">
+    </div> -->
     <div class="planned" *ngIf="!isPhonePortrait" [ngClass]="{'is-phone-portrait': isPhonePortrait, 'is-tablet-landscape': isTabletLandscape ,'is-tablet-portrait': isTabletPortrait, 'is-large': isLarge, 'is-XLarge': isXLarge}">
       <h1 class="content__header">Planned Projects</h1>
       <p class="content__text">

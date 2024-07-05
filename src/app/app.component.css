@@ -101,10 +101,17 @@
     width: 100%;
     height: 90vh;
     object-fit: cover;
+    border-radius: 20px;
+    /* padding-top: 20px; */
+}
+
+.is-tablet-portrait .hero__wrapper .selfie img{
+    display: none;
 }
 
 .is-phone-portrait .hero__wrapper .selfie img{
-    display: none;
+    height: 53vh;
+    border-radius: 15px;
 }
 
 .is-tablet-landscape .hero__wrapper .selfie img{
@@ -115,6 +122,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+}
+
+.is-tablet-portrait .planned{
+    margin-top: 0px;
 }
 
 .planned .content__text{
